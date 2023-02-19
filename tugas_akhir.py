@@ -1,9 +1,17 @@
 import cv2
 import mediapipe as mp
+import os
 
 mp_drawing = mp.solutions.drawing_utils
 mp_drawing_styles = mp.solutions.drawing_styles
 mp_pose = mp.solutions.pose
+
+# #Membuat Label untuk Folder
+# Labels = ["TanganA","TanganB"]
+# #Now create folders for each label to store images
+# for label in Labels:
+#     if not os.path.exists(label):
+#         os.mkdir(label)
 
 # For webcam input:
 cap = cv2.VideoCapture(0)

@@ -24,7 +24,7 @@ def CreateDir(path):
             os.makedirs(sf)
 NamaDataSet = "PoseA"
 
-def CreateDataSet(NoKamera,NamaDataSet):
+#def CreateDataSet(NoKamera,NamaDataSet):
   mp_drawing = mp.solutions.drawing_utils
   mp_drawing_styles = mp.solutions.drawing_styles
   mp_pose = mp.solutions.pose
@@ -49,7 +49,7 @@ def CreateDataSet(NoKamera,NamaDataSet):
       #bikin kotak buat mapping wilayahnya 
       image_height, image_width, _ = image.shape
       coords = []
-      oordsy = []
+      coordsy = []
 
       results = pose.process(image)
 
